@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products &amp; Cabinetry Collections | LumeWood</title>
+  <meta name="description" content="Explore LumeWood's bespoke modular wardrobes, luxury walk-in dressing suites, modern kitchen cabinetry, and living storage collections.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       GLOBAL HEADER & NAVBAR (EXACTLY MATCHING INDEX.HTML)
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container navbar">
+      <!-- Architectural Monogram Logo -->
+      <a href="index.html" class="brand" aria-label="LumeWood Home">
+        <svg class="brand-icon-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="3" y="3" width="30" height="30" rx="4" stroke="currentColor" stroke-width="2" class="brand-svg-frame"/>
+          <path d="M3 3H16V33H7C4.79086 33 3 31.2091 3 29V3Z" fill="var(--color-accent-wood, #8A6245)" fill-opacity="0.18" class="brand-svg-fill"/>
+          <line x1="16" y1="3" x2="16" y2="33" stroke="currentColor" stroke-width="2" class="brand-svg-divider"/>
+          <rect x="19.5" y="6.5" width="10" height="11" rx="1.5" stroke="var(--color-accent-wood, #8A6245)" stroke-width="1.6" class="brand-svg-accent"/>
+          <line x1="16" y1="23" x2="33" y2="23" stroke="currentColor" stroke-width="1.5" class="brand-svg-line"/>
+          <line x1="21" y1="28" x2="28" y2="28" stroke="var(--color-accent-wood, #8A6245)" stroke-width="2" stroke-linecap="round" class="brand-svg-handle"/>
+          <line x1="12" y1="12" x2="12" y2="24" stroke="var(--color-accent-wood, #8A6245)" stroke-width="2.2" stroke-linecap="round" class="brand-svg-handle"/>
+          <circle cx="9.5" cy="7.5" r="1.2" fill="var(--color-accent-wood, #8A6245)" class="brand-svg-dot"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">LumeWood</span>
+          <span class="brand-tagline">Designed Around Your Space.</span>
+        </span>
+      </a>
+
+      <!-- Main Navigation (Desktop > 1280px) -->
+      <nav class="main-nav" aria-label="Public Navigation">
+        <!-- Home Dropdown -->
+        <div class="nav-dropdown">
+          <button type="button" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="dropdown-pane">
+            <a href="index.html" class="dropdown-item">
+              <span>Home 1</span>
+            </a>
+            <a href="home2.html" class="dropdown-item">
+              <span>Home 2</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link is-active">Products</a>
+        <a href="design-gallery.html" class="nav-link">Design Gallery</a>
+        <a href="pricing-guide.html" class="nav-link">Pricing Guide</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+
+        <!-- Client Portal Dropdown -->
+        <div class="nav-dropdown">
+          <button type="button" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            <span>Client Portal</span>
+            <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="dropdown-pane dropdown-pane--right">
+            <a href="dashboard/index.html" class="dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              <span>User Dashboard</span>
+            </a>
+            <a href="admin-dashboard/index.html" class="dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M12 6v6l4 2"></path></svg>
+              <span>Admin Dashboard</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="login.html" class="dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+              <span>Client Login</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Dark Mode Toggle -->
+        <button type="button" class="control-btn" data-action="toggle-theme" aria-label="Toggle Dark / Light Mode" title="Toggle Theme">
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="theme-icon-sun" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+
+        <!-- RTL/LTR Toggle -->
+        <button type="button" class="control-btn" data-action="toggle-rtl" aria-label="Toggle Text Direction" title="Toggle RTL / LTR">
+          <span class="dir-badge" style="font-weight: 700; font-size: 0.75rem;">RTL</span>
+        </button>
+
+        <!-- Login CTA Button -->
+        <a href="login.html" class="nav-login-btn">LOGIN</a>
+
+        <!-- Mobile/Tablet Hamburger Toggle -->
+        <button type="button" class="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="menu-toggle-line"></span>
+          <span class="menu-toggle-line"></span>
+          <span class="menu-toggle-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MOBILE & TABLET NAVIGATION DRAWER
+       ========================================================================= -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <a href="index.html" class="brand" aria-label="LumeWood Home">
+        <svg class="brand-icon-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="3" y="3" width="30" height="30" rx="4" stroke="currentColor" stroke-width="2" class="brand-svg-frame"/>
+          <path d="M3 3H16V33H7C4.79086 33 3 31.2091 3 29V3Z" fill="var(--color-accent-wood, #8A6245)" fill-opacity="0.18" class="brand-svg-fill"/>
+          <line x1="16" y1="3" x2="16" y2="33" stroke="currentColor" stroke-width="2" class="brand-svg-divider"/>
+          <rect x="19.5" y="6.5" width="10" height="11" rx="1.5" stroke="var(--color-accent-wood, #8A6245)" stroke-width="1.6" class="brand-svg-accent"/>
+          <line x1="16" y1="23" x2="33" y2="23" stroke="currentColor" stroke-width="1.5" class="brand-svg-line"/>
+          <line x1="21" y1="28" x2="28" y2="28" stroke="var(--color-accent-wood, #8A6245)" stroke-width="2" stroke-linecap="round" class="brand-svg-handle"/>
+          <line x1="12" y1="12" x2="12" y2="24" stroke="var(--color-accent-wood, #8A6245)" stroke-width="2.2" stroke-linecap="round" class="brand-svg-handle"/>
+          <circle cx="9.5" cy="7.5" r="1.2" fill="var(--color-accent-wood, #8A6245)" class="brand-svg-dot"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">LumeWood</span>
+          <span class="brand-tagline">Designed Around Your Space.</span>
+        </span>
+      </a>
+      <button type="button" class="drawer-close-btn" aria-label="Close Navigation Menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <nav class="drawer-nav" aria-label="Drawer Menu Links">
+        <ul class="drawer-nav-list">
+          <li>
+            <button type="button" class="drawer-nav-link drawer-submenu-toggle" data-target="drawer-home-submenu" aria-expanded="false">
+              <span>Home</span>
+              <svg class="dropdown-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="drawer-submenu" id="drawer-home-submenu">
+              <a href="index.html" class="drawer-sublink">
+                <span>Home 1</span>
+              </a>
+              <a href="home2.html" class="drawer-sublink">
+                <span>Home 2</span>
+              </a>
+            </div>
+          </li>
+          <li><a href="about.html" class="drawer-nav-link">About</a></li>
+          <li><a href="products.html" class="drawer-nav-link is-active">Products</a></li>
+          <li><a href="index.html#categories" class="drawer-nav-link">Categories</a></li>
+          <li><a href="products.html" class="drawer-nav-link">Brands</a></li>
+          <li><a href="pricing-guide.html" class="drawer-nav-link">Deals</a></li>
+          <li><a href="index.html#materials" class="drawer-nav-link">Accessories</a></li>
+          <li><a href="design-gallery.html" class="drawer-nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="drawer-nav-link">Blog</a></li>
+          <li><a href="contact.html" class="drawer-nav-link">Contact</a></li>
+          <li>
+            <button type="button" class="drawer-nav-link drawer-submenu-toggle" data-target="drawer-portal-submenu" aria-expanded="false">
+              <span>Client Portal</span>
+              <svg class="dropdown-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="drawer-submenu" id="drawer-portal-submenu">
+              <a href="dashboard/index.html" class="drawer-sublink">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                <span>User Dashboard</span>
+              </a>
+              <a href="admin-dashboard/index.html" class="drawer-sublink">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M12 6v6l4 2"></path></svg>
+                <span>Admin Dashboard</span>
+              </a>
+              <a href="login.html" class="drawer-sublink">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+                <span>Client Login</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="drawer-divider"></div>
+
+      <div class="drawer-controls-row">
+        <button type="button" class="drawer-control-item" data-action="toggle-theme" aria-label="Toggle Theme">
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="theme-icon-sun" style="display: none;" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line></svg>
+          <span class="theme-label-text">Dark Mode</span>
+        </button>
+
+        <button type="button" class="drawer-control-item" data-action="toggle-rtl" aria-label="Toggle RTL Mode">
+          <span class="dir-badge" style="font-weight: 700; font-size: 0.75rem;">RTL</span>
+          <span class="dir-label-text">Switch to RTL</span>
+        </button>
+      </div>
+
+      <!-- Drawer Login CTA Button -->
+      <a href="login.html" class="drawer-login-btn">LOGIN</a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       MAIN CONTENT (EXACTLY 6 SECTIONS)
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- =======================================================================
+         SECTION 1: THE LUMEWOOD COLLECTION (EDITORIAL HERO)
+         ======================================================================= -->
+    <section class="section products-hero-section" id="products-hero" aria-label="The LumeWood Products Collection">
+      <div class="container">
+        <div class="products-hero-grid">
+          <!-- Asymmetric Left Visual -->
+          <div class="products-hero-media reveal">
+            <img
+              src="assets/images/products/products-hero.jpg"
+              alt="Full-height modular wardrobe integrated into a contemporary bedroom"
+              class="products-hero-img"
+              width="1280"
+              height="854"
+              loading="eager"
+            >
+          </div>
+
+          <!-- Hero Content Block -->
+          <div class="products-hero-content reveal">
+            <span class="section-eyebrow">THE LUMEWOOD COLLECTION</span>
+            <h1 class="section-title" style="font-size: clamp(2.2rem, 1.8rem + 2vw, 3.5rem); line-height: 1.1; margin-bottom: 20px;">
+              STORAGE, SHAPED AROUND THE ROOM.
+            </h1>
+            <p class="section-subtitle" style="margin-bottom: 32px;">
+              Explore considered wardrobe and cabinetry solutions designed to bring structure, function and visual calm to contemporary residential spaces.
+            </p>
+
+            <div class="btn-group">
+              <a href="#wardrobes" class="btn btn-primary">
+                <span>Explore Wardrobes</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+              </a>
+              <a href="contact.html#project-enquiry" class="btn btn-secondary">
+                <span>Start Your Project</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 2: MODULAR WARDROBES
+         ======================================================================= -->
+    <section class="section product-wardrobes-section" id="wardrobes" aria-label="Modular Wardrobes Collection">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">FLEXIBLE SYSTEM ARCHITECTURE</span>
+          <h2 class="section-title">MODULAR WARDROBES</h2>
+          <p class="section-subtitle">
+            Flexible storage systems designed to make the most of bedroom walls, alcoves and everyday routines.
+          </p>
+        </div>
+
+        <!-- 4-Column Product Grid -->
+        <div class="product-wardrobes-grid">
+          <!-- 01 Full-Height Wardrobes -->
+          <article class="product-cat-card reveal">
+            <div class="product-cat-media">
+              <img
+                src="assets/images/products/wardrobes/modular-wardrobe-01.jpg"
+                alt="Full-height floor-to-ceiling modular wardrobe system with integrated lighting"
+                class="product-cat-img"
+                width="800"
+                height="600"
+                loading="lazy"
+              >
+            </div>
+            <div class="product-cat-body">
+              <span class="product-cat-num">01</span>
+              <h3 class="product-cat-title">Full-Height Wardrobes</h3>
+              <p class="product-cat-desc">Floor-to-ceiling joinery designed to maximize vertical storage with seamless structural room integration.</p>
+              <div class="product-cat-action">
+                <a href="contact.html#project-enquiry" class="product-card-link" aria-label="View details for Full-Height Wardrobes">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 Sliding Door Systems -->
+          <article class="product-cat-card reveal">
+            <div class="product-cat-media">
+              <img
+                src="assets/images/products/wardrobes/sliding-wardrobe-01.jpg"
+                alt="Architectural sliding door wardrobe with smooth glide mechanism"
+                class="product-cat-img"
+                width="800"
+                height="600"
+                loading="lazy"
+              >
+            </div>
+            <div class="product-cat-body">
+              <span class="product-cat-num">02</span>
+              <h3 class="product-cat-title">Sliding Door Systems</h3>
+              <p class="product-cat-desc">Space-saving smooth glide mechanisms with smoked glass, acoustic timber, and satin lacquers.</p>
+              <div class="product-cat-action">
+                <a href="contact.html#project-enquiry" class="product-card-link" aria-label="View details for Sliding Door Systems">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 Hinged Door Wardrobes -->
+          <article class="product-cat-card reveal">
+            <div class="product-cat-media">
+              <img
+                src="assets/images/products/wardrobes/hinged-wardrobe-01.jpg"
+                alt="Classic hinged door wardrobe with soft-close hardware and custom handles"
+                class="product-cat-img"
+                width="800"
+                height="600"
+                loading="lazy"
+              >
+            </div>
+            <div class="product-cat-body">
+              <span class="product-cat-num">03</span>
+              <h3 class="product-cat-title">Hinged Door Wardrobes</h3>
+              <p class="product-cat-desc">Classic architectural cabinetry featuring soft-close hinges, flush shadow lines, and custom handles.</p>
+              <div class="product-cat-action">
+                <a href="contact.html#project-enquiry" class="product-card-link" aria-label="View details for Hinged Door Wardrobes">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04 Integrated Storage -->
+          <article class="product-cat-card reveal">
+            <div class="product-cat-media">
+              <img
+                src="assets/images/products/wardrobes/integrated-wardrobe-01.jpg"
+                alt="Integrated wardrobe interior with modular drawers and illuminated accessory bays"
+                class="product-cat-img"
+                width="800"
+                height="600"
+                loading="lazy"
+              >
+            </div>
+            <div class="product-cat-body">
+              <span class="product-cat-num">04</span>
+              <h3 class="product-cat-title">Integrated Storage</h3>
+              <p class="product-cat-desc">Bespoke interior organization with modular drawer banks, accessory vitrines, and LED-lit bays.</p>
+              <div class="product-cat-action">
+                <a href="contact.html#project-enquiry" class="product-card-link" aria-label="View details for Integrated Storage">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 3: WALK-IN WARDROBES
+         ======================================================================= -->
+    <section class="section walkin-section" id="walk-in" aria-label="Walk-In Dressing Suites">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">DEDICATED DRESSING ENVIRONMENTS</span>
+          <h2 class="section-title">WALK-IN WARDROBES</h2>
+          <p class="section-subtitle">
+            Purposeful dressing spaces where open storage, organization and material choices come together as one considered interior.
+          </p>
+        </div>
+
+        <div class="walkin-showcase-grid">
+          <!-- Left: Image Mosaic (Large Feature + 2 Sub Visuals) -->
+          <div class="walkin-media-mosaic reveal">
+            <div class="walkin-mosaic-main">
+              <img
+                src="assets/images/products/walk-in/walk-in-wardrobe-main.jpg"
+                alt="Expansive walk-in wardrobe dressing suite with center island and illuminated storage"
+                width="1200"
+                height="800"
+                loading="lazy"
+              >
+            </div>
+            <div class="walkin-mosaic-sub">
+              <div class="walkin-mosaic-sub-item">
+                <img
+                  src="assets/images/products/walk-in/walk-in-wardrobe-detail.jpg"
+                  alt="Custom drawer organization with velvet dividers and precision hardware"
+                  width="600"
+                  height="450"
+                  loading="lazy"
+                >
+              </div>
+              <div class="walkin-mosaic-sub-item">
+                <img
+                  src="assets/images/products/walk-in/walk-in-wardrobe-storage.jpg"
+                  alt="Walk-in wardrobe hanging zones and illuminated open vitrines"
+                  width="600"
+                  height="450"
+                  loading="lazy"
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Editorial Features Panel -->
+          <div class="walkin-content-panel reveal">
+            <div class="walkin-features-list">
+              <div class="walkin-feature-row">
+                <span class="walkin-feature-num">01</span>
+                <div class="walkin-feature-body">
+                  <h3 class="walkin-feature-title">Open Storage</h3>
+                  <p class="walkin-feature-desc">Tailored open vitrines and illuminated display bays designed for effortless daily garment access.</p>
+                </div>
+              </div>
+
+              <div class="walkin-feature-row">
+                <span class="walkin-feature-num">02</span>
+                <div class="walkin-feature-body">
+                  <h3 class="walkin-feature-title">Drawer Organization</h3>
+                  <p class="walkin-feature-desc">Precision velvet-lined jewelry inserts, watch compartments, and custom compartmental dividers.</p>
+                </div>
+              </div>
+
+              <div class="walkin-feature-row">
+                <span class="walkin-feature-num">03</span>
+                <div class="walkin-feature-body">
+                  <h3 class="walkin-feature-title">Hanging Zones</h3>
+                  <p class="walkin-feature-desc">Balanced long-coat and double-tiered garment rails engineered with concealed soft LED lighting.</p>
+                </div>
+              </div>
+
+              <div class="walkin-feature-row">
+                <span class="walkin-feature-num">04</span>
+                <div class="walkin-feature-body">
+                  <h3 class="walkin-feature-title">Accessory Storage</h3>
+                  <p class="walkin-feature-desc">Center dressing islands, specialized leather trays, and concealed pull-out valet rods.</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px;">
+              <a href="contact.html#project-enquiry" class="btn btn-primary">
+                <span>Start Walk-in Project</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 4: KITCHEN & LIVING CABINETRY
+         ======================================================================= -->
+    <section class="section kitchen-living-section" id="kitchen-living" aria-label="Kitchen and Living Cabinetry">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">WHOLE-HOME CONTINUITY</span>
+          <h2 class="section-title">KITCHEN &amp; LIVING CABINETRY</h2>
+          <p class="section-subtitle">
+            Extend the same considered approach beyond the bedroom with cabinetry designed for cooking, gathering, working and living.
+          </p>
+        </div>
+
+        <!-- 2 Large Editorial Panels -->
+        <div class="dual-panel-grid">
+          <!-- Panel A: Modern Kitchen Cabinetry -->
+          <article class="editorial-panel reveal">
+            <div class="editorial-panel-media">
+              <img
+                src="assets/images/products/kitchens/modern-kitchen.jpg"
+                alt="Modern residential kitchen with bespoke fluted timber and matte cabinetry"
+                class="editorial-panel-img"
+                width="1000"
+                height="680"
+                loading="lazy"
+              >
+            </div>
+            <div class="editorial-panel-body">
+              <span class="editorial-panel-tag">Culinary Architecture</span>
+              <h3 class="editorial-panel-title">Modern Kitchen Cabinetry</h3>
+              <p class="editorial-panel-desc">Architectural kitchen joinery with concealed appliance zones, fluted timber panels, and durable anti-fingerprint matte work surfaces.</p>
+              <div class="editorial-panel-action">
+                <a href="contact.html#project-enquiry" class="product-card-link" aria-label="View details for Modern Kitchen Cabinetry">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Panel B: Living Storage -->
+          <article class="editorial-panel reveal">
+            <div class="editorial-panel-media">
+              <img
+                src="assets/images/products/living/living-storage.jpg"
+                alt="Built-in living room storage with warm wood finish and floating credenza"
+                class="editorial-panel-img"
+                width="1000"
+                height="680"
+                loading="lazy"
+              >
+            </div>
+            <div class="editorial-panel-body">
+              <span class="editorial-panel-tag">Social &amp; Media Space</span>
+              <h3 class="editorial-panel-title">Living Room Storage &amp; Credenzas</h3>
+              <p class="editorial-panel-desc">Floating credenzas, acoustic timber wall slatted units, and integrated media storage that preserve open room atmosphere.</p>
+              <div class="editorial-panel-action">
+                <a href="contact.html#project-enquiry" class="product-card-link" aria-label="View details for Living Room Storage">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 5: STUDY, UTILITY & SPECIAL STORAGE
+         ======================================================================= -->
+    <section class="section spaces-section" id="study-utility" aria-label="Study, Utility and Multi-Purpose Storage">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">VERSATILE RESIDENTIAL SPACES</span>
+          <h2 class="section-title">STORAGE FOR THE SPACES BETWEEN.</h2>
+          <p class="section-subtitle">
+            Tailored built-in solutions designed to bring order to home offices, laundry suites, and multifunctional residential alcoves.
+          </p>
+        </div>
+
+        <div class="spaces-showcase-grid">
+          <!-- Left: Large Study Storage Card -->
+          <article class="space-large-card reveal">
+            <div class="space-large-media">
+              <img
+                src="assets/images/products/study/study-storage.jpg"
+                alt="Built-in home study desk and bookcase storage joinery in warm neutral tones"
+                width="900"
+                height="675"
+                loading="lazy"
+              >
+            </div>
+            <div class="space-large-body">
+              <span class="editorial-panel-tag">Home Workspace</span>
+              <h3 class="editorial-panel-title" style="font-size: 1.25rem;">Study Storage</h3>
+              <p class="editorial-panel-desc">Clean built-in cabinetry for focused work and organized storage, featuring integrated cable channels and task lighting.</p>
+              <div class="editorial-panel-action">
+                <a href="contact.html#project-enquiry" class="product-card-link" aria-label="View details for Study Storage">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Right: Two Stacked Cards (Utility & Multi-Purpose) -->
+          <div class="space-stacked-cards">
+            <!-- Top: Utility Cabinetry -->
+            <article class="space-stacked-item reveal">
+              <div class="space-stacked-media">
+                <img
+                  src="assets/images/products/utility/utility-cabinetry.jpg"
+                  alt="Custom utility and laundry room cabinetry with concealed hampers"
+                  width="600"
+                  height="450"
+                  loading="lazy"
+                >
+              </div>
+              <div class="space-stacked-body">
+                <h3 class="space-stacked-title">Utility Cabinetry</h3>
+                <p class="space-stacked-desc">Purpose-built storage for practical household needs, concealed hampers and linen care.</p>
+                <div style="margin-top: 10px;">
+                  <a href="contact.html#project-enquiry" class="product-card-link" aria-label="View details for Utility Cabinetry">
+                    <span>View Details</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Bottom: Multi-Purpose Storage -->
+            <article class="space-stacked-item reveal">
+              <div class="space-stacked-media">
+                <img
+                  src="assets/images/products/special-storage/special-storage.jpg"
+                  alt="Multi-purpose architectural alcove storage cabinetry"
+                  width="600"
+                  height="450"
+                  loading="lazy"
+                >
+              </div>
+              <div class="space-stacked-body">
+                <h3 class="space-stacked-title">Multi-Purpose Storage</h3>
+                <p class="space-stacked-desc">Flexible cabinetry for rooms that need more than one function, from entryways to awkward alcoves.</p>
+                <div style="margin-top: 10px;">
+                  <a href="contact.html#project-enquiry" class="product-card-link" aria-label="View details for Multi-Purpose Storage">
+                    <span>View Details</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 6: FIND THE RIGHT SOLUTION FOR YOUR SPACE (FINAL CTA)
+         ======================================================================= -->
+    <section class="section products-cta-section" id="find-solution" aria-label="Find the Right Storage Solution">
+      <div class="container">
+        <div class="products-cta-box reveal">
+          <div class="products-cta-content">
+            <span class="section-eyebrow">PERSONALIZED CONSULTATION</span>
+            <h2 class="section-title" style="margin-bottom: 16px;">FIND THE RIGHT SOLUTION FOR YOUR SPACE.</h2>
+            <p class="section-subtitle" style="margin-bottom: 0;">
+              Tell us about your room, dimensions, storage needs and preferred style. We can use those details as the starting point for a considered cabinetry solution.
+            </p>
+            <div class="products-cta-btn-group">
+              <a href="contact.html#project-enquiry" class="btn btn-primary">
+                <span>Start Your Project</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="design-gallery.html" class="btn btn-secondary">
+                <span>View Design Gallery</span>
+              </a>
+              <a href="login.html" class="btn btn-secondary">
+                <span>Client Login</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       GLOBAL FOOTER (EXACTLY MATCHING INDEX.HTML)
+       ========================================================================= -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="LumeWood Home">
+            <svg class="brand-icon-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="30" height="30" rx="4" stroke="#F5F1EB" stroke-width="2"/>
+              <path d="M3 3H16V33H7C4.79086 33 3 31.2091 3 29V3Z" fill="#B88A61" fill-opacity="0.25"/>
+              <line x1="16" y1="3" x2="16" y2="33" stroke="#F5F1EB" stroke-width="2"/>
+              <rect x="19.5" y="6.5" width="10" height="11" rx="1.5" stroke="#B88A61" stroke-width="1.6"/>
+              <line x1="16" y1="23" x2="33" y2="23" stroke="#F5F1EB" stroke-width="1.5"/>
+              <line x1="21" y1="28" x2="28" y2="28" stroke="#B88A61" stroke-width="2" stroke-linecap="round"/>
+              <line x1="12" y1="12" x2="12" y2="24" stroke="#B88A61" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="9.5" cy="7.5" r="1.2" fill="#B88A61"/>
+            </svg>
+            <span class="brand-text">
+              <span class="brand-name">LumeWood</span>
+              <span class="brand-tagline">Designed Around Your Space.</span>
+            </span>
+          </a>
+          <p class="footer-brand-desc">Custom modular wardrobes and cabinetry designed around the room, storage needs, material preferences and lifestyle of the homeowner.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="products.html" class="footer-link">Products</a></li>
+            <li><a href="design-gallery.html" class="footer-link">Design Gallery</a></li>
+            <li><a href="pricing-guide.html" class="footer-link">Pricing Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">Products</h3>
+          <ul class="footer-links-list">
+            <li><a href="products.html#wardrobes" class="footer-link">Modular Wardrobes</a></li>
+            <li><a href="products.html#walk-in" class="footer-link">Walk-in Wardrobes</a></li>
+            <li><a href="products.html#kitchen-living" class="footer-link">Kitchen Cabinets</a></li>
+            <li><a href="products.html#kitchen-living" class="footer-link">Living Storage</a></li>
+            <li><a href="products.html#study-utility" class="footer-link">Study Storage</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">Explore</h3>
+          <ul class="footer-links-list">
+            <li><a href="about.html#materials" class="footer-link">Materials</a></li>
+            <li><a href="about.html#process" class="footer-link">Process</a></li>
+            <li><a href="pricing-guide.html" class="footer-link">Pricing Guide</a></li>
+            <li><a href="about.html#philosophy" class="footer-link">Testimonials</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">Client Portal</h3>
+          <ul class="footer-links-list">
+            <li><a href="login.html" class="footer-link">Client Login</a></li>
+            <li><a href="dashboard/index.html" class="footer-link">User Dashboard</a></li>
+            <li><a href="admin-dashboard/index.html" class="footer-link">Admin Dashboard</a></li>
+            <li><a href="register.html" class="footer-link">Create Account</a></li>
+            <li><a href="forgot-password.html" class="footer-link">Reset Password</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 LumeWood. All rights reserved. Designed Around Your Space.</p>
+        <div class="footer-legal-links">
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Service</a>
+          <a href="dashboard/index.html">Client Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

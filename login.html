@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Portal Login | LumeWood</title>
+  <meta name="description" content="Sign in to your LumeWood Client Portal to track 3D CAD design revisions, manufacturing milestones, and communicate with your dedicated architect.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+</head>
+<body class="auth-body">
+
+  <!-- Top Back to Website Link -->
+  <a href="index.html" class="auth-top-nav-link" aria-label="Return to LumeWood Website">
+    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+    <span>Back to Website</span>
+  </a>
+
+  <!-- Top Right Floating Controls (Dark Mode & RTL) -->
+  <div class="auth-floating-controls" aria-label="Display Controls">
+    <button type="button" class="control-btn" data-action="toggle-theme" aria-label="Toggle Dark / Light Mode" title="Toggle Theme">
+      <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      <svg class="theme-icon-sun" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+    </button>
+    <button type="button" class="control-btn" data-action="toggle-rtl" aria-label="Toggle Text Direction" title="Toggle RTL">
+      <span class="dir-badge" style="font-weight: 700; font-size: 0.75rem;">RTL</span>
+    </button>
+  </div>
+
+  <!-- Login Main Content -->
+  <main id="main-content" class="auth-wrapper">
+    <div class="auth-container">
+      <div class="auth-card">
+        <!-- Centered Logo inside Form Card -->
+        <a href="index.html" class="auth-brand-center" aria-label="LumeWood Home">
+          <svg class="brand-icon-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="3" y="3" width="30" height="30" rx="4" stroke="currentColor" stroke-width="2" class="brand-svg-frame"/>
+            <path d="M3 3H16V33H7C4.79086 33 3 31.2091 3 29V3Z" fill="var(--color-accent-wood, #8A6245)" fill-opacity="0.18" class="brand-svg-fill"/>
+            <line x1="16" y1="3" x2="16" y2="33" stroke="currentColor" stroke-width="2" class="brand-svg-divider"/>
+            <rect x="19.5" y="6.5" width="10" height="11" rx="1.5" stroke="var(--color-accent-wood, #8A6245)" stroke-width="1.6" class="brand-svg-accent"/>
+            <line x1="16" y1="23" x2="33" y2="23" stroke="currentColor" stroke-width="1.5" class="brand-svg-line"/>
+            <line x1="21" y1="28" x2="28" y2="28" stroke="var(--color-accent-wood, #8A6245)" stroke-width="2" stroke-linecap="round" class="brand-svg-handle"/>
+            <line x1="12" y1="12" x2="12" y2="24" stroke="var(--color-accent-wood, #8A6245)" stroke-width="2.2" stroke-linecap="round" class="brand-svg-handle"/>
+            <circle cx="9.5" cy="7.5" r="1.2" fill="var(--color-accent-wood, #8A6245)" class="brand-svg-dot"/>
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">LumeWood</span>
+            <span class="brand-tagline">Designed Around Your Space.</span>
+          </span>
+        </a>
+
+        <div class="auth-header">
+          <span class="section-eyebrow">PORTAL ACCESS</span>
+          <h1 class="section-title">SIGN IN TO LUMEWOOD</h1>
+          <p class="section-subtitle">
+            Review your 3D CAD renders, track factory joinery stages, and manage project milestones.
+          </p>
+        </div>
+
+        <!-- Role Switcher Tabs -->
+        <div class="auth-tabs" role="tablist" aria-label="Portal Mode">
+          <button type="button" class="auth-tab is-active" id="tab-homeowner" role="tab" aria-selected="true" aria-controls="login-form" onclick="switchLoginRole('homeowner')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span>Homeowner</span>
+          </button>
+          <button type="button" class="auth-tab" id="tab-admin" role="tab" aria-selected="false" aria-controls="login-form" onclick="switchLoginRole('admin')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M12 6v6l4 2"></path></svg>
+            <span>Studio Admin</span>
+          </button>
+        </div>
+
+        <form id="login-form" class="auth-form" onsubmit="handleLoginSubmit(event)">
+          <div class="form-group">
+            <label class="form-label" for="login-email" id="label-email">Email / Client ID</label>
+            <input type="text" id="login-email" class="form-input" placeholder="eleanor.vance@lumewood-client.com" value="eleanor.vance@lumewood-client.com" required autocomplete="username">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="login-password">Password</label>
+            <input type="password" id="login-password" class="form-input" placeholder="••••••••••••" value="lumewood2026" required autocomplete="current-password">
+          </div>
+
+          <div class="auth-meta-row">
+            <label class="form-checkbox-label">
+              <input type="checkbox" class="form-checkbox" checked>
+              <span>Remember this device</span>
+            </label>
+            <a href="forgot-password.html" class="auth-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" id="login-submit-btn" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <span>Sign In to Homeowner Portal</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </form>
+
+        <!-- Social SSO Authentication -->
+        <div class="auth-divider"><span>or sign in with</span></div>
+        <div class="auth-social-grid">
+          <button type="button" class="auth-social-btn" aria-label="Sign in with Google" onclick="handleSocialAuth('Google')" title="Sign in with Google">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/><path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/></svg>
+            <span>Google</span>
+          </button>
+          <button type="button" class="auth-social-btn" aria-label="Sign in with Apple" onclick="handleSocialAuth('Apple')" title="Sign in with Apple">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.85-.9.04-2.02.6-2.66 1.35-.57.65-1.06 1.7-0.93 2.73 1.01.08 2.05-.49 2.67-1.23z"/></svg>
+            <span>Apple</span>
+          </button>
+          <button type="button" class="auth-social-btn" aria-label="Sign in with Microsoft" onclick="handleSocialAuth('Microsoft')" title="Sign in with Microsoft">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#F25022" d="M1 1h10v10H1z"/><path fill="#7FBA00" d="M13 1h10v10H13z"/><path fill="#00A4EF" d="M1 13h10v10H1z"/><path fill="#FFB900" d="M13 13h10v10H13z"/></svg>
+            <span>Microsoft</span>
+          </button>
+        </div>
+
+        <!-- Quick Demo Access Box -->
+        <div class="auth-demo-panel">
+          <div class="auth-demo-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <span>Showroom Demo Portals</span>
+          </div>
+          <div class="auth-demo-grid">
+            <a href="dashboard/index.html" class="auth-demo-btn">
+              <span>Eleanor Vance</span>
+              <span class="auth-demo-badge">Client</span>
+            </a>
+            <a href="admin-dashboard/index.html" class="auth-demo-btn">
+              <span>Marcus Vance</span>
+              <span class="auth-demo-badge">Admin</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="auth-footer-prompt">
+          New homeowner commissioning a project? <a href="register.html">Create an Account</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Core Scripts -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+
+  <script>
+    let currentRole = 'homeowner';
+
+    function switchLoginRole(role) {
+      currentRole = role;
+      const tabHomeowner = document.getElementById('tab-homeowner');
+      const tabAdmin = document.getElementById('tab-admin');
+      const submitBtn = document.getElementById('login-submit-btn');
+      const emailInput = document.getElementById('login-email');
+      const labelEmail = document.getElementById('label-email');
+
+      if (role === 'admin') {
+        tabAdmin.classList.add('is-active');
+        tabAdmin.setAttribute('aria-selected', 'true');
+        tabHomeowner.classList.remove('is-active');
+        tabHomeowner.setAttribute('aria-selected', 'false');
+
+        labelEmail.textContent = 'Staff / Admin Email';
+        emailInput.placeholder = 'marcus.vance@lumewood.com';
+        emailInput.value = 'marcus.vance@lumewood.com';
+        submitBtn.innerHTML = '<span>Sign In to Studio Admin</span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>';
+      } else {
+        tabHomeowner.classList.add('is-active');
+        tabHomeowner.setAttribute('aria-selected', 'true');
+        tabAdmin.classList.remove('is-active');
+        tabAdmin.setAttribute('aria-selected', 'false');
+
+        labelEmail.textContent = 'Email / Client ID';
+        emailInput.placeholder = 'eleanor.vance@lumewood-client.com';
+        emailInput.value = 'eleanor.vance@lumewood-client.com';
+        submitBtn.innerHTML = '<span>Sign In to Homeowner Portal</span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>';
+      }
+    }
+
+    function handleLoginSubmit(event) {
+      event.preventDefault();
+      if (currentRole === 'admin') {
+        window.location.href = 'admin-dashboard/index.html';
+      } else {
+        window.location.href = 'dashboard/index.html';
+      }
+    }
+
+    function handleSocialAuth(provider) {
+      if (currentRole === 'admin') {
+        window.location.href = 'admin-dashboard/index.html';
+      } else {
+        window.location.href = 'dashboard/index.html';
+      }
+    }
+  </script>
+</body>
+</html>

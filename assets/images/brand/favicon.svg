@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <!-- Dark Luxury Canvas Background -->
+  <rect width="48" height="48" rx="12" fill="#1C1A18"/>
+  <rect x="1" y="1" width="46" height="46" rx="11" stroke="#3A3632" stroke-width="1.5"/>
+
+  <!-- Outer Architectural Cabinet Frame -->
+  <rect x="8" y="8" width="32" height="32" rx="4" stroke="#F5F1EB" stroke-width="2.2"/>
+  
+  <!-- Left Module (L-Structure: Tall Floor-to-Ceiling Wardrobe Door with Gold Tint) -->
+  <path d="M8 8H22V40H12C9.79086 40 8 38.2091 8 36V8Z" fill="#B88A61" fill-opacity="0.25"/>
+  
+  <!-- Vertical Division Mullion -->
+  <line x1="22" y1="8" x2="22" y2="40" stroke="#F5F1EB" stroke-width="2.2"/>
+  
+  <!-- Right Upper Vitrine Cabinet -->
+  <rect x="25.5" y="12" width="11" height="12" rx="1.5" stroke="#B88A61" stroke-width="1.8"/>
+  
+  <!-- Right Lower Drawer Division -->
+  <line x1="22" y1="28" x2="40" y2="28" stroke="#F5F1EB" stroke-width="1.8"/>
+  <line x1="27" y1="33.5" x2="35" y2="33.5" stroke="#B88A61" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Precision Tall Wardrobe Door Handle (Golden Accent) -->
+  <line x1="17" y1="18" x2="17" y2="30" stroke="#B88A61" stroke-width="2.4" stroke-linecap="round"/>
+  
+  <!-- Lume Illumination Light Dot -->
+  <circle cx="14" cy="13" r="1.5" fill="#B88A61"/>
+</svg>

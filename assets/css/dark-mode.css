@@ -1,0 +1,246 @@
+/* ==========================================================================
+   LUMEWOOD — DARK MODE STYLES
+   Color Theme & Contrast Overrides (assets/css/dark-mode.css)
+   ========================================================================== */
+
+[data-theme="dark"] {
+  --color-bg: #181716;
+  --color-surface: #242220;
+  --color-surface-secondary: #2D2A27;
+  --color-text-main: #F5F1EB;
+  --color-text-deep: #F5F1EB;
+  --color-text-muted: #BDB6AE;
+  --color-accent-wood: #B88A61;
+  --color-accent-walnut: #d19f72;
+  --color-border: #47423D;
+  --color-border-subtle: #36322E;
+  --color-success: #679B73;
+  --color-warning: #D9A44F;
+  --color-danger: #C25650;
+  --color-info: #6496B5;
+  --color-focus: #B88A61;
+
+  /* Button Variables - Dark */
+  --btn-primary-bg: #B88A61;
+  --btn-primary-text: #181716;
+  --btn-primary-border: #B88A61;
+  --btn-primary-hover-bg: #d19f72;
+  --btn-primary-hover-border: #d19f72;
+
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: #F5F1EB;
+  --btn-secondary-border: #BDB6AE;
+  --btn-secondary-hover-bg: #2D2A27;
+  --btn-secondary-hover-text: #F5F1EB;
+
+  /* Shadows */
+  --shadow-subtle: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo in Dark Mode */
+[data-theme="dark"] .brand-icon-path {
+  fill: #B88A61;
+}
+
+[data-theme="dark"] .brand-icon-line {
+  stroke: #B88A61;
+}
+
+[data-theme="dark"] .brand-name {
+  color: #F5F1EB;
+}
+
+[data-theme="dark"] .brand-tagline {
+  color: #B88A61;
+}
+
+/* Header & Dropdown */
+[data-theme="dark"] .site-header {
+  background-color: var(--color-bg);
+  border-bottom-color: var(--color-border);
+}
+
+[data-theme="dark"] .site-header.is-scrolled {
+  background-color: rgba(24, 23, 22, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .nav-link:hover {
+  color: var(--color-accent-wood);
+  background-color: rgba(184, 138, 97, 0.12);
+}
+
+[data-theme="dark"] .nav-link.is-active {
+  background-color: var(--color-surface-secondary);
+  border-color: var(--color-border);
+  color: var(--color-accent-wood);
+}
+
+[data-theme="dark"] .dropdown-pane {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .dropdown-item:hover,
+[data-theme="dark"] .dropdown-item.is-active {
+  background-color: var(--color-surface-secondary);
+  color: var(--color-accent-wood);
+}
+
+[data-theme="dark"] .control-btn,
+[data-theme="dark"] .menu-toggle {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+  color: var(--color-text-main);
+}
+
+[data-theme="dark"] .menu-toggle-line {
+  background-color: var(--color-text-main);
+}
+
+/* Drawer in Dark Mode */
+[data-theme="dark"] .mobile-drawer {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .drawer-header {
+  border-bottom-color: var(--color-border);
+}
+
+[data-theme="dark"] .drawer-close-btn {
+  background-color: var(--color-surface-secondary);
+  border-color: var(--color-border);
+  color: var(--color-text-main);
+}
+
+[data-theme="dark"] .drawer-nav-link:hover {
+  background-color: var(--color-surface-secondary);
+  color: var(--color-accent-wood);
+}
+
+[data-theme="dark"] .drawer-nav-link.is-active {
+  background-color: var(--color-surface-secondary);
+  border-color: var(--color-border);
+  color: var(--color-accent-wood);
+}
+
+[data-theme="dark"] .drawer-sublink:hover,
+[data-theme="dark"] .drawer-sublink.is-active {
+  color: var(--color-accent-wood);
+  background-color: var(--color-surface-secondary);
+}
+
+[data-theme="dark"] .drawer-control-item {
+  background-color: var(--color-surface-secondary);
+  border-color: var(--color-border);
+  color: var(--color-text-main);
+}
+
+/* Login CTA Button in Dark Mode */
+[data-theme="dark"] .nav-login-btn,
+[data-theme="dark"] .drawer-login-btn {
+  background-color: #B88A61;
+  color: #181716;
+  border-color: #B88A61;
+}
+
+[data-theme="dark"] .nav-login-btn:hover,
+[data-theme="dark"] .nav-login-btn:focus-visible,
+[data-theme="dark"] .drawer-login-btn:hover,
+[data-theme="dark"] .drawer-login-btn:focus-visible {
+  background-color: #CBA47E;
+  border-color: #CBA47E;
+  color: #181716;
+}
+
+/* Dashboard Dark Overrides */
+[data-theme="dark"] .dashboard-sidebar {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .sidebar-link:hover {
+  background-color: var(--color-surface-secondary);
+  color: var(--color-accent-wood);
+}
+
+[data-theme="dark"] .sidebar-link.is-active {
+  background-color: var(--color-surface-secondary);
+  border-color: var(--color-border);
+  color: var(--color-accent-wood);
+}
+
+[data-theme="dark"] .metric-card,
+[data-theme="dark"] .table-container,
+[data-theme="dark"] .card {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .table th {
+  background-color: var(--color-surface-secondary);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .form-input,
+[data-theme="dark"] .form-select,
+[data-theme="dark"] .form-textarea {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+  color: var(--color-text-main);
+}
+
+/* Footer Dark Mode */
+[data-theme="dark"] .site-footer {
+  background-color: #181716;
+  border-top-color: var(--color-border);
+}
+
+[data-theme="dark"] .footer-bottom {
+  border-top-color: var(--color-border);
+}
+
+/* Home 2 Dark Mode Polish */
+[data-theme="dark"] .home2-cta-card {
+  background-color: #201E1C;
+  border-color: #383430;
+}
+
+[data-theme="dark"] .home2-day-timeline-grid {
+  background-color: var(--color-border);
+}
+
+[data-theme="dark"] .home2-day-step:hover {
+  background-color: var(--color-surface-secondary);
+}
+
+[data-theme="dark"] .home2-principle-card:hover {
+  background-color: var(--color-surface-secondary);
+}
+
+/* Materials, Process & Testimonials Dark Mode */
+[data-theme="dark"] .mat-card,
+[data-theme="dark"] .mat-care-card,
+[data-theme="dark"] .process-card,
+[data-theme="dark"] .test-card,
+[data-theme="dark"] .studio-info-card {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .mat-card:hover,
+[data-theme="dark"] .process-card:hover,
+[data-theme="dark"] .test-card:hover,
+[data-theme="dark"] .studio-info-card:hover {
+  border-color: var(--color-accent-wood);
+}
+
+/* Contact Map Dark Mode */
+[data-theme="dark"] .contact-map-iframe {
+  filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+
