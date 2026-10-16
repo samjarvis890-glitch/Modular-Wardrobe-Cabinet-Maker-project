@@ -138,6 +138,25 @@
     gap: 40px !important;
   }
 
+  /* Harmonized Tablet Hero Media Height */
+  .hero-visual img,
+  .about-hero-img,
+  .products-hero-img,
+  .pricing-hero-img,
+  .blog-hero-img,
+  .contact-hero-img,
+  .mat-hero-media img,
+  .process-hero-media img,
+  .test-hero-media img,
+  .gallery-hero-img {
+    height: clamp(320px, 42vw, 420px);
+  }
+
+  .home2-pane-media {
+    height: clamp(320px, 42vw, 420px);
+    min-height: unset;
+  }
+
   .philosophy-grid {
     grid-template-columns: 1fr !important;
     gap: 40px !important;
@@ -324,9 +343,30 @@
   }
 
   /* Home 2 Tablet Reflows */
-  .home2-hero-grid {
+  .home2-hero-header {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 24px;
+  }
+
+  .home2-hero-showcase {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .home2-hero-pane--side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .home2-side-vignette {
+    height: 100%;
+    min-height: 180px;
+  }
+
+  .home2-hero-pillars {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 
   .home2-rooms-grid {
@@ -513,8 +553,45 @@
     gap: 14px;
   }
 
-  .about-hero-img {
-    max-height: 380px;
+  /* Harmonized Mobile Hero Section & Media */
+  .hero-section {
+    padding-top: clamp(28px, 4vw, 40px);
+    padding-bottom: clamp(36px, 5vw, 48px);
+  }
+
+  .hero-visual img,
+  .about-hero-img,
+  .products-hero-img,
+  .pricing-hero-img,
+  .blog-hero-img,
+  .contact-hero-img,
+  .mat-hero-media img,
+  .process-hero-media img,
+  .test-hero-media img,
+  .gallery-hero-img {
+    height: clamp(260px, 52vw, 360px);
+    max-height: 360px;
+  }
+
+  .home2-pane-media {
+    height: clamp(260px, 52vw, 360px);
+    min-height: unset;
+  }
+
+  .hero-image-badge {
+    bottom: 12px;
+    left: 12px;
+    padding: 8px 12px;
+    max-width: calc(100% - 24px);
+  }
+
+  [dir="rtl"] .hero-image-badge {
+    left: auto;
+    right: 12px;
+  }
+
+  .hero-image-badge-text {
+    font-size: 0.75rem;
   }
 
   .about-arch-img {
@@ -758,25 +835,53 @@
   }
 
   /* Home 2 Mobile Reflows */
-  .home2-hero-meta {
+  .home2-hero-header {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 20px;
+    margin-bottom: 24px;
   }
 
-  .home2-hero-badge {
+  .home2-pane-floating-card {
     position: static;
-    margin-top: 12px;
+    margin: 12px 0 0 0;
     background-color: var(--color-surface);
     color: var(--color-text-main);
     border: 1px solid var(--color-border);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
   }
 
-  .home2-hero-badge .home2-badge-title {
+  .home2-pane-floating-card .home2-floating-title {
     color: var(--color-text-deep);
   }
 
-  .home2-hero-badge .home2-badge-subtitle {
+  .home2-pane-floating-card .home2-floating-meta {
     color: var(--color-text-muted);
+  }
+
+  .home2-pane-floating-card .home2-floating-btn {
+    background-color: var(--color-accent-wood);
+    border-color: var(--color-accent-wood);
+    color: #FFFFFF;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .home2-hero-pane--side {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .home2-side-vignette {
+    height: 180px;
+  }
+
+  .home2-hero-pillars {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 16px;
   }
 
   .home2-rooms-grid {
@@ -912,6 +1017,26 @@
 
   .container {
     width: calc(100% - 24px);
+  }
+
+  /* Small Mobile Hero Media Height */
+  .hero-visual img,
+  .about-hero-img,
+  .products-hero-img,
+  .pricing-hero-img,
+  .blog-hero-img,
+  .contact-hero-img,
+  .mat-hero-media img,
+  .process-hero-media img,
+  .test-hero-media img,
+  .gallery-hero-img {
+    height: clamp(220px, 56vw, 300px);
+    max-height: 300px;
+  }
+
+  .home2-pane-media {
+    height: clamp(220px, 56vw, 300px);
+    min-height: unset;
   }
 
   .btn-group {

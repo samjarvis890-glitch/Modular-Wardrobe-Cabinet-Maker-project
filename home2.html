@@ -208,19 +208,6 @@
 
       <div class="drawer-divider"></div>
 
-      <div class="drawer-controls-row">
-        <button type="button" class="drawer-control-item" data-action="toggle-theme" aria-label="Toggle Theme">
-          <svg class="theme-icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-          <svg class="theme-icon-sun" style="display: none;" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line></svg>
-          <span class="theme-label-text">Dark Mode</span>
-        </button>
-
-        <button type="button" class="drawer-control-item" data-action="toggle-rtl" aria-label="Toggle RTL Mode">
-          <span class="dir-badge" style="font-weight: 700; font-size: 0.75rem;">RTL</span>
-          <span class="dir-label-text">Switch to RTL</span>
-        </button>
-      </div>
-
       <!-- Drawer Login CTA Button -->
       <a href="login.html" class="drawer-login-btn">LOGIN</a>
     </div>
@@ -232,69 +219,146 @@
   <main id="main-content">
 
     <!-- =======================================================================
-         SECTION 1: HERO HOME 2
+         SECTION 1: HERO HOME 2 (REDESIGNED ARCHITECTURAL SHOWCASE)
          ======================================================================= -->
-    <section class="section home2-hero-section" id="hero-home2" aria-label="Home 2 Architectural Hero">
+    <section class="section hero-section home2-hero-section" id="hero-home2" aria-label="Home 2 Architectural Hero">
       <div class="container">
-        <div class="home2-hero-grid">
-          
-          <!-- Left: Narrative & Actions -->
-          <div class="home2-hero-content reveal">
-            <span class="section-eyebrow">LUMEWOOD &bull; CUSTOM STORAGE &amp; CABINETRY</span>
-            <h1 class="section-title" style="font-size: clamp(2.35rem, 1.8rem + 2.5vw, 3.85rem); line-height: 1.1; margin-bottom: 20px;">
-              STORAGE THAT SHAPES THE ROOM.
-            </h1>
-            <p class="section-subtitle" style="margin-bottom: 32px; max-width: 540px;">
-              Thoughtfully designed wardrobes and cabinetry that bring proportion, order and character to the spaces you live in.
-            </p>
-
-            <div class="btn-group" style="margin-bottom: 20px;">
-              <a href="design-gallery.html" class="btn btn-primary">
-                <span>DISCOVER OUR DESIGNS</span>
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              </a>
-              <a href="contact.html#project-enquiry" class="btn btn-secondary">
-                <span>START YOUR PROJECT</span>
-              </a>
+        
+        <!-- Tier 1: Wide Editorial Header -->
+        <div class="home2-hero-header reveal">
+          <div class="home2-hero-title-col">
+            <div class="home2-hero-eyebrow-wrap">
+              <span class="home2-hero-pill">Spatial Architecture</span>
+              <span class="home2-hero-eyebrow-text">LUMEWOOD &bull; 2026 EDITION</span>
             </div>
-
-            <!-- Spatial Callouts -->
-            <div class="home2-hero-meta">
-              <div class="home2-meta-item">
-                <span class="home2-meta-num">350+</span>
-                <span class="home2-meta-label">Bespoke Rooms</span>
+            <h1 class="home2-hero-title">
+              STORAGE THAT <span class="home2-title-accent">SHAPES</span> THE ROOM.
+            </h1>
+          </div>
+          <div class="home2-hero-intro-col">
+            <p class="home2-hero-desc">
+              Thoughtfully designed wardrobes, living room transition walls, and custom cabinetry engineered to bring proportion, acoustic warmth, and architectural character to the spaces you live in.
+            </p>
+            <div class="home2-hero-actions">
+              <div class="btn-group">
+                <a href="design-gallery.html" class="btn btn-primary">
+                  <span>DISCOVER OUR DESIGNS</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="contact.html#project-enquiry" class="btn btn-secondary">
+                  <span>START YOUR PROJECT</span>
+                </a>
               </div>
-              <div class="home2-meta-item">
-                <span class="home2-meta-num">10-Year</span>
-                <span class="home2-meta-label">Built Warranty</span>
-              </div>
-              <div class="home2-meta-item">
-                <span class="home2-meta-num">100%</span>
-                <span class="home2-meta-label">Tailored Fit</span>
+              <div class="home2-hero-chips" aria-label="Curated Architectural Systems">
+                <span class="home2-chip">Wardrobe Suites</span>
+                <span class="home2-chip">Living Millwork</span>
+                <span class="home2-chip">Kitchen Transition</span>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Right: Architectural Hero Media -->
-          <div class="home2-hero-media reveal">
-            <div class="home2-hero-media-wrap">
+        <!-- Tier 2: Asymmetric Media Showcase -->
+        <div class="home2-hero-showcase reveal">
+          
+          <!-- Primary Panoramic Showcase -->
+          <div class="home2-hero-pane home2-hero-pane--main">
+            <div class="home2-pane-media">
               <img 
                 src="assets/images/home2/home2-hero.jpg" 
                 alt="Contemporary residential dining and living transition space with full-height integrated cabinetry wall in warm walnut and soft matte taupe" 
                 width="1400" 
-                height="1050" 
+                height="875" 
                 fetchpriority="high">
-              <div class="home2-hero-badge">
-                <div>
-                  <h3 class="home2-badge-title">Integrated Joinery Wall</h3>
-                  <p class="home2-badge-subtitle">Dining &amp; Living Transition Suite</p>
+              <div class="home2-hero-gradient-overlay" aria-hidden="true"></div>
+              
+              <!-- Glassmorphic Specification Floating Console -->
+              <div class="home2-pane-floating-card">
+                <div class="home2-floating-info">
+                  <div class="home2-floating-header">
+                    <span class="home2-status-dot" aria-hidden="true"></span>
+                    <span class="home2-floating-kicker">FEATURED RESIDENCE &bull; 2026</span>
+                  </div>
+                  <h3 class="home2-floating-title">Integrated Joinery &amp; Living Suite</h3>
+                  <p class="home2-floating-meta">Smoked American Walnut &bull; Taupe Matt Lacquer &bull; 0.5mm Laser Tolerance</p>
                 </div>
-                <span class="home2-badge-tag">Bespoke 2026</span>
+                <a href="design-gallery.html" class="home2-floating-btn" aria-label="View Full Gallery Portfolio">
+                  <span>View Suite</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary Companion Console (Vignette + Studio Metrics) -->
+          <div class="home2-hero-pane home2-hero-pane--side">
+            <!-- Inset Detail Photo -->
+            <div class="home2-side-vignette">
+              <img 
+                src="assets/images/home2/architecture-storage.jpg" 
+                alt="Architectural modular storage joinery wall with built-in display niche and hidden wardrobe storage" 
+                loading="lazy" 
+                width="600" 
+                height="400">
+              <div class="home2-vignette-badge">
+                <span class="home2-vignette-tag">Precision Millwork</span>
+              </div>
+            </div>
+
+            <!-- Metric & Craft Callouts -->
+            <div class="home2-side-metrics">
+              <div class="home2-side-metric-item">
+                <span class="home2-side-metric-num">350+</span>
+                <span class="home2-side-metric-label">Bespoke Rooms</span>
+                <span class="home2-side-metric-sub">Tailored to exact ceiling heights</span>
+              </div>
+              <div class="home2-side-metric-item">
+                <span class="home2-side-metric-num">10-Year</span>
+                <span class="home2-side-metric-label">Built Warranty</span>
+                <span class="home2-side-metric-sub">Commercial-grade hardware</span>
+              </div>
+              <div class="home2-side-metric-item">
+                <span class="home2-side-metric-num">100%</span>
+                <span class="home2-side-metric-label">Tailored Fit</span>
+                <span class="home2-side-metric-sub">Zero off-the-shelf filler panels</span>
               </div>
             </div>
           </div>
 
         </div>
+
+        <!-- Tier 3: Bottom Architectural Pillars Ribbon -->
+        <div class="home2-hero-pillars reveal" aria-label="Architectural Quality Pillars">
+          <div class="home2-pillar-item">
+            <span class="home2-pillar-idx">01</span>
+            <div class="home2-pillar-text">
+              <strong>Spatial Proportion</strong>
+              <span>Designed around ceiling height and daylight</span>
+            </div>
+          </div>
+          <div class="home2-pillar-item">
+            <span class="home2-pillar-idx">02</span>
+            <div class="home2-pillar-text">
+              <strong>Concealed Architecture</strong>
+              <span>Integrated flush hinges and zero-gap joints</span>
+            </div>
+          </div>
+          <div class="home2-pillar-item">
+            <span class="home2-pillar-idx">03</span>
+            <div class="home2-pillar-text">
+              <strong>Acoustic Linings</strong>
+              <span>Soft-touch fabric drawers &amp; silent glides</span>
+            </div>
+          </div>
+          <div class="home2-pillar-item">
+            <span class="home2-pillar-idx">04</span>
+            <div class="home2-pillar-text">
+              <strong>Certified Timber</strong>
+              <span>FSC European Oak, Walnut &amp; Eco-veneers</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -304,7 +368,7 @@
     <section class="section" id="room-first" aria-label="Room First Storage Philosophy">
       <div class="container">
         
-        <div class="section-header text-center reveal" style="max-width: 780px; margin-inline: auto; margin-bottom: clamp(36px, 5vw, 56px);">
+        <div class="section-header reveal" style="max-width: 720px; margin-bottom: clamp(36px, 5vw, 56px);">
           <span class="section-eyebrow">SPATIAL PROPORTIONS</span>
           <h2 class="section-title">THE ROOM COMES FIRST.</h2>
           <p class="section-subtitle">
@@ -394,7 +458,7 @@
     <!-- =======================================================================
          SECTION 3: STORAGE AS ARCHITECTURE
          ======================================================================= -->
-    <section class="section" id="storage-architecture" style="background-color: var(--color-surface-secondary);" aria-label="Storage as Architecture">
+    <section class="section section--secondary" id="storage-architecture" aria-label="Storage as Architecture">
       <div class="container">
         <div class="home2-arch-grid">
           
@@ -471,7 +535,7 @@
     <section class="section" id="everyday-living" aria-label="Everyday Living and Daily Storage Flow">
       <div class="container">
         
-        <div class="section-header text-center reveal" style="max-width: 780px; margin-inline: auto; margin-bottom: clamp(36px, 5vw, 56px);">
+        <div class="section-header reveal" style="max-width: 720px; margin-bottom: clamp(36px, 5vw, 56px);">
           <span class="section-eyebrow">LIFESTYLE &amp; DAILY RHYTHM</span>
           <h2 class="section-title">DESIGNED AROUND THE WAY YOU LIVE.</h2>
           <p class="section-subtitle">
@@ -534,10 +598,10 @@
     <!-- =======================================================================
          SECTION 5: THE DETAILS THAT CHANGE THE FEELING
          ======================================================================= -->
-    <section class="section" id="detail-closer" style="background-color: var(--color-surface-secondary);" aria-label="Tactile Craftsmanship Details">
+    <section class="section section--secondary" id="detail-closer" aria-label="Tactile Craftsmanship Details">
       <div class="container">
         
-        <div class="section-header text-center reveal" style="max-width: 780px; margin-inline: auto; margin-bottom: clamp(36px, 5vw, 56px);">
+        <div class="section-header reveal" style="max-width: 720px; margin-bottom: clamp(36px, 5vw, 56px);">
           <span class="section-eyebrow">TACTILE CRAFTSMANSHIP</span>
           <h2 class="section-title">LOOK CLOSER.</h2>
           <p class="section-subtitle">
@@ -660,7 +724,7 @@
     <!-- =======================================================================
          SECTION 6: FINAL HOME 2 CTA
          ======================================================================= -->
-    <section class="section" id="home2-cta" aria-label="Start Your Space Project">
+    <section class="section section--highlight" id="home2-cta" aria-label="Start Your Space Project">
       <div class="container">
         <div class="home2-cta-card reveal">
           <div class="home2-cta-inner">
@@ -675,10 +739,10 @@
                 <span>START YOUR PROJECT</span>
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
-              <a href="products.html" class="btn btn-secondary" style="border-color: #A39D95; color: #F5F1EB;">
+              <a href="products.html" class="btn btn-secondary">
                 <span>EXPLORE PRODUCTS</span>
               </a>
-              <a href="design-gallery.html" class="btn btn-secondary" style="border-color: #A39D95; color: #F5F1EB;">
+              <a href="design-gallery.html" class="btn btn-secondary">
                 <span>VIEW DESIGN GALLERY</span>
               </a>
             </div>
@@ -699,14 +763,14 @@
         <div class="footer-brand">
           <a href="index.html" class="brand" aria-label="LumeWood Home">
             <svg class="brand-icon-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect x="3" y="3" width="30" height="30" rx="4" stroke="#F5F1EB" stroke-width="2"/>
-              <path d="M3 3H16V33H7C4.79086 33 3 31.2091 3 29V3Z" fill="#B88A61" fill-opacity="0.25"/>
-              <line x1="16" y1="3" x2="16" y2="33" stroke="#F5F1EB" stroke-width="2"/>
-              <rect x="19.5" y="6.5" width="10" height="11" rx="1.5" stroke="#B88A61" stroke-width="1.6"/>
-              <line x1="16" y1="23" x2="33" y2="23" stroke="#F5F1EB" stroke-width="1.5"/>
-              <line x1="21" y1="28" x2="28" y2="28" stroke="#B88A61" stroke-width="2" stroke-linecap="round"/>
-              <line x1="12" y1="12" x2="12" y2="24" stroke="#B88A61" stroke-width="2.2" stroke-linecap="round"/>
-              <circle cx="9.5" cy="7.5" r="1.2" fill="#B88A61"/>
+              <rect x="3" y="3" width="30" height="30" rx="4" stroke="currentColor" stroke-width="2" class="brand-svg-frame"/>
+              <path d="M3 3H16V33H7C4.79086 33 3 31.2091 3 29V3Z" fill="var(--color-accent-wood, #8A6245)" fill-opacity="0.18" class="brand-svg-fill"/>
+              <line x1="16" y1="3" x2="16" y2="33" stroke="currentColor" stroke-width="2" class="brand-svg-divider"/>
+              <rect x="19.5" y="6.5" width="10" height="11" rx="1.5" stroke="var(--color-accent-wood, #8A6245)" stroke-width="1.6" class="brand-svg-accent"/>
+              <line x1="16" y1="23" x2="33" y2="23" stroke="currentColor" stroke-width="1.5" class="brand-svg-line"/>
+              <line x1="21" y1="28" x2="28" y2="28" stroke="var(--color-accent-wood, #8A6245)" stroke-width="2" stroke-linecap="round" class="brand-svg-handle"/>
+              <line x1="12" y1="12" x2="12" y2="24" stroke="var(--color-accent-wood, #8A6245)" stroke-width="2.2" stroke-linecap="round" class="brand-svg-handle"/>
+              <circle cx="9.5" cy="7.5" r="1.2" fill="var(--color-accent-wood, #8A6245)" class="brand-svg-dot"/>
             </svg>
             <span class="brand-text">
               <span class="brand-name">LumeWood</span>

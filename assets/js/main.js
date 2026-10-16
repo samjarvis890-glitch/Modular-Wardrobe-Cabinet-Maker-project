@@ -241,5 +241,33 @@
         }, 800);
       });
     }
+
+    // 8. Enhanced Dropdown Select Placeholder & Accessibility State
+    const allSelects = document.querySelectorAll('select');
+    allSelects.forEach(select => {
+      const updateSelectState = () => {
+        if (!select.value) {
+          select.classList.add('select-placeholder');
+        } else {
+          select.classList.remove('select-placeholder');
+        }
+      };
+      select.addEventListener('change', updateSelectState);
+      updateSelectState();
+    });
+
+    if (enquiryForm) {
+      enquiryForm.addEventListener('reset', () => {
+        setTimeout(() => {
+          allSelects.forEach(select => {
+            if (!select.value) {
+              select.classList.add('select-placeholder');
+            } else {
+              select.classList.remove('select-placeholder');
+            }
+          });
+        }, 10);
+      });
+    }
   });
 })();

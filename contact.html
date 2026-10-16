@@ -208,19 +208,6 @@
 
       <div class="drawer-divider"></div>
 
-      <div class="drawer-controls-row">
-        <button type="button" class="drawer-control-item" data-action="toggle-theme" aria-label="Toggle Theme">
-          <svg class="theme-icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-          <svg class="theme-icon-sun" style="display: none;" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line></svg>
-          <span class="theme-label-text">Dark Mode</span>
-        </button>
-
-        <button type="button" class="drawer-control-item" data-action="toggle-rtl" aria-label="Toggle RTL Mode">
-          <span class="dir-badge" style="font-weight: 700; font-size: 0.75rem;">RTL</span>
-          <span class="dir-label-text">Switch to RTL</span>
-        </button>
-      </div>
-
       <!-- Drawer Login CTA Button -->
       <a href="login.html" class="drawer-login-btn">LOGIN</a>
     </div>
@@ -234,7 +221,7 @@
     <!-- =======================================================================
          SECTION 1: CONTACT HERO
          ======================================================================= -->
-    <section class="section" id="hero-contact" aria-labelledby="contact-hero-heading" style="padding-top: clamp(32px, 5vw, 64px);">
+    <section class="section hero-section" id="hero-contact" aria-labelledby="contact-hero-heading">
       <div class="container">
         <div class="contact-hero-grid">
           <!-- Left: Hero Content -->
@@ -247,11 +234,11 @@
               Tell us about the room, the storage you need and the design direction you have in mind. Your requirements are the starting point for a more considered storage solution.
             </p>
             <div class="btn-group">
-              <a href="#project-enquiry" class="btn btn--primary">
+              <a href="#project-enquiry" class="btn btn-primary">
                 <span>START YOUR ENQUIRY</span>
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
-              <a href="design-gallery.html" class="btn btn--secondary">
+              <a href="design-gallery.html" class="btn btn-secondary">
                 <span>VIEW DESIGN GALLERY</span>
               </a>
             </div>
@@ -335,7 +322,7 @@
          ======================================================================= -->
     <section class="section" id="project-enquiry" aria-labelledby="form-heading">
       <div class="container">
-        <div class="section-header text-center" style="max-width: 780px; margin-inline: auto;">
+        <div class="section-header" style="max-width: 760px;">
           <span class="section-eyebrow">START THE CONVERSATION</span>
           <h2 class="section-title" id="form-heading">YOUR PROJECT</h2>
           <p class="section-subtitle">
@@ -368,7 +355,7 @@
                   type="text" 
                   id="first-name" 
                   name="first_name" 
-                  class="form-control" 
+                  class="form-control form-input" 
                   placeholder="Your first name" 
                   required 
                   autocomplete="given-name">
@@ -383,7 +370,7 @@
                   type="text" 
                   id="last-name" 
                   name="last_name" 
-                  class="form-control" 
+                  class="form-control form-input" 
                   placeholder="Your last name" 
                   required 
                   autocomplete="family-name">
@@ -398,7 +385,7 @@
                   type="email" 
                   id="email-address" 
                   name="email" 
-                  class="form-control" 
+                  class="form-control form-input" 
                   placeholder="name@example.com" 
                   required 
                   autocomplete="email">
@@ -413,7 +400,7 @@
                   type="tel" 
                   id="phone-number" 
                   name="phone" 
-                  class="form-control" 
+                  class="form-control form-input" 
                   placeholder="Your contact number" 
                   required 
                   autocomplete="tel">
@@ -424,7 +411,7 @@
                 <label for="project-type" class="form-label">
                   Project Type <span style="color: var(--color-accent-wood); font-weight: 700;">*</span>
                 </label>
-                <select id="project-type" name="project_type" class="form-control" required>
+                <select id="project-type" name="project_type" class="form-control form-select" required>
                   <option value="" disabled selected>Select project type</option>
                   <option value="modular-wardrobe">Modular Wardrobe</option>
                   <option value="walk-in-wardrobe">Walk-in Wardrobe</option>
@@ -440,7 +427,7 @@
                 <label for="room-space" class="form-label">
                   Room / Space <span style="color: var(--color-accent-wood); font-weight: 700;">*</span>
                 </label>
-                <select id="room-space" name="room_space" class="form-control" required>
+                <select id="room-space" name="room_space" class="form-control form-select" required>
                   <option value="" disabled selected>Select space</option>
                   <option value="bedroom">Bedroom</option>
                   <option value="walk-in-dressing">Walk-in / Dressing Room</option>
@@ -458,7 +445,7 @@
                 <label for="design-direction" class="form-label">
                   Design Direction
                 </label>
-                <select id="design-direction" name="design_direction" class="form-control">
+                <select id="design-direction" name="design_direction" class="form-control form-select">
                   <option value="" disabled selected>Select aesthetic direction</option>
                   <option value="warm-natural">Warm &amp; Natural</option>
                   <option value="contemporary-minimal">Contemporary Minimal</option>
@@ -474,7 +461,7 @@
                 <label for="project-stage" class="form-label">
                   Project Stage
                 </label>
-                <select id="project-stage" name="project_stage" class="form-control">
+                <select id="project-stage" name="project_stage" class="form-control form-select">
                   <option value="" disabled selected>Select project stage</option>
                   <option value="exploring-ideas">Exploring Ideas</option>
                   <option value="planning">Planning</option>
@@ -493,7 +480,7 @@
                   type="text" 
                   id="room-size" 
                   name="room_size" 
-                  class="form-control" 
+                  class="form-control form-input" 
                   placeholder="e.g. 4.2m x 3.5m or ceiling height">
               </div>
 
@@ -502,7 +489,7 @@
                 <label for="budget-range" class="form-label">
                   Budget / Investment Range
                 </label>
-                <select id="budget-range" name="budget_range" class="form-control">
+                <select id="budget-range" name="budget_range" class="form-control form-select">
                   <option value="" disabled selected>Select budget approach</option>
                   <option value="not-decided">Not Decided</option>
                   <option value="exploring-options">Exploring Options</option>
@@ -519,7 +506,7 @@
                 <textarea 
                   id="project-description" 
                   name="project_description" 
-                  class="form-control" 
+                  class="form-control form-textarea" 
                   rows="4" 
                   placeholder="Tell us about the room, storage requirements, preferred materials, dimensions or anything else that would help us understand your project."
                   required></textarea>
@@ -555,9 +542,9 @@
               </div>
 
               <div class="form-group contact-form-group--full" style="margin-top: 12px;">
-                <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center; padding: 14px 24px; font-size: 0.9375rem;">
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 14px 24px; font-size: 0.9375rem;">
                   <span>SUBMIT PROJECT ENQUIRY</span>
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </button>
               </div>
             </div>
@@ -778,12 +765,12 @@
                 London, EC1M 4DF, United Kingdom
               </p>
               <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                <a href="tel:+442079460912" class="btn btn--outline btn--sm">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <a href="tel:+442079460912" class="btn btn-outline btn-sm">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                   <span>+44 (0) 20 7946 0912</span>
                 </a>
-                <a href="mailto:studio@lumewood.com" class="btn btn--outline btn--sm">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <a href="mailto:studio@lumewood.com" class="btn btn-outline btn-sm">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                   <span>studio@lumewood.com</span>
                 </a>
               </div>
@@ -840,7 +827,7 @@
     <!-- =======================================================================
          SECTION 7: FINAL CTA
          ======================================================================= -->
-    <section class="section" id="contact-cta" aria-labelledby="cta-contact-heading">
+    <section class="section section--highlight" id="contact-cta" aria-labelledby="cta-contact-heading">
       <div class="container">
         <div class="contact-cta-wrapper reveal">
           <div class="contact-cta-content">
@@ -852,14 +839,14 @@
               Whether you are planning a single wardrobe or thinking about storage across several rooms, begin with the space you have and the way you want it to work.
             </p>
             <div class="contact-cta-btn-group">
-              <a href="#project-enquiry" class="btn btn--primary">
+              <a href="#project-enquiry" class="btn btn-primary">
                 <span>SUBMIT YOUR ENQUIRY</span>
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
-              <a href="products.html" class="btn btn--secondary">
+              <a href="products.html" class="btn btn-secondary">
                 <span>EXPLORE PRODUCTS</span>
               </a>
-              <a href="login.html" class="btn btn--outline" style="border-color: #625A52; color: #F5F1EB;">
+              <a href="login.html" class="btn btn-outline">
                 <span>CLIENT LOGIN</span>
               </a>
             </div>
@@ -880,14 +867,14 @@
         <div class="footer-brand">
           <a href="index.html" class="brand" aria-label="LumeWood Home">
             <svg class="brand-icon-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect x="3" y="3" width="30" height="30" rx="4" stroke="#F5F1EB" stroke-width="2"/>
-              <path d="M3 3H16V33H7C4.79086 33 3 31.2091 3 29V3Z" fill="#B88A61" fill-opacity="0.25"/>
-              <line x1="16" y1="3" x2="16" y2="33" stroke="#F5F1EB" stroke-width="2"/>
-              <rect x="19.5" y="6.5" width="10" height="11" rx="1.5" stroke="#B88A61" stroke-width="1.6"/>
-              <line x1="16" y1="23" x2="33" y2="23" stroke="#F5F1EB" stroke-width="1.5"/>
-              <line x1="21" y1="28" x2="28" y2="28" stroke="#B88A61" stroke-width="2" stroke-linecap="round"/>
-              <line x1="12" y1="12" x2="12" y2="24" stroke="#B88A61" stroke-width="2.2" stroke-linecap="round"/>
-              <circle cx="9.5" cy="7.5" r="1.2" fill="#B88A61"/>
+              <rect x="3" y="3" width="30" height="30" rx="4" stroke="currentColor" stroke-width="2" class="brand-svg-frame"/>
+              <path d="M3 3H16V33H7C4.79086 33 3 31.2091 3 29V3Z" fill="var(--color-accent-wood, #8A6245)" fill-opacity="0.18" class="brand-svg-fill"/>
+              <line x1="16" y1="3" x2="16" y2="33" stroke="currentColor" stroke-width="2" class="brand-svg-divider"/>
+              <rect x="19.5" y="6.5" width="10" height="11" rx="1.5" stroke="var(--color-accent-wood, #8A6245)" stroke-width="1.6" class="brand-svg-accent"/>
+              <line x1="16" y1="23" x2="33" y2="23" stroke="currentColor" stroke-width="1.5" class="brand-svg-line"/>
+              <line x1="21" y1="28" x2="28" y2="28" stroke="var(--color-accent-wood, #8A6245)" stroke-width="2" stroke-linecap="round" class="brand-svg-handle"/>
+              <line x1="12" y1="12" x2="12" y2="24" stroke="var(--color-accent-wood, #8A6245)" stroke-width="2.2" stroke-linecap="round" class="brand-svg-handle"/>
+              <circle cx="9.5" cy="7.5" r="1.2" fill="var(--color-accent-wood, #8A6245)" class="brand-svg-dot"/>
             </svg>
             <span class="brand-text">
               <span class="brand-name">LumeWood</span>
